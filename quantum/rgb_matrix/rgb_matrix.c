@@ -210,6 +210,11 @@ void rgb_matrix_set_color_all(uint8_t red, uint8_t green, uint8_t blue) {
 }
 
 void process_rgb_matrix(uint8_t row, uint8_t col, bool pressed) {
+/*  optozorax - код для ранних версий библиотек, здесь работать не будет, надо думать
+    if (record->event.key.custom_keycode) {
+        return true;
+    }
+*/
 #ifndef RGB_MATRIX_SPLIT
     if (!is_keyboard_master()) return;
 #endif
