@@ -1,21 +1,17 @@
-/* Copyright 2020 ZSA Technology Labs, Inc <@zsa>
- * Copyright 2020 Jack Humbert <jack.humb@gmail.com>
- * Copyright 2020 Christopher Courtney, aka Drashna Jael're  (@drashna) <drashna@live.com>
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
-
-#pragma once
-
 #define ORYX_CONFIGURATOR
+#define FIRMWARE_VERSION u8"xbJpL/wy5xo"
+#define RGB_MATRIX_STARTUP_SPD 60
+
+#undef RGB_MATRIX_MAXIMUM_BRIGHTNESS
+#define RGB_MATRIX_MAXIMUM_BRIGHTNESS 255
+
+#define LANG_CHANGE_DEFAULT LANG_CHANGE_CAPS
+
+#define COMBO_KEYS_COUNT 50
+#define COMBO_MAX_SIZE 4
+#define COMBO_STACK_MAX_SIZE 5
+#define COMBO_WAIT_TIME 100
+
+#define COLOR_PICTURE_DEFAULT 2
+
+#define DISABLE_DEFAULT_ML_LEDS_LOGIC
